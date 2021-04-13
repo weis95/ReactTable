@@ -26,6 +26,12 @@ const Table = ({participants}) =>  {
         } */
     }
     
+    function doNotRefresh(event, newArray) {
+        /*Messy but works "needs more engineering" */
+        event.preventDefault();
+        setArray([])
+        setArray(newArray)
+    }
     const addObject = (event, name, email, phone) => {
         if(!name || !email || !phone){
             event.preventDefault();
@@ -42,21 +48,14 @@ const Table = ({participants}) =>  {
         array.push(theNewPropertiesToAdd)
         const newArray = [...array]
 
-        /*Messy but works "needs more engineering" */
-        event.preventDefault();
-        setArray([])
-        setArray(newArray)
+        doNotRefresh(event, newArray)
     }
 
     const deleteObject = (event, id) => {
         const objectId = array.map(function(item) { return item.id; }).indexOf(id)
         array.splice(objectId, 1);
         const newArray = [...array]
-
-        /*Messy but works "needs more engineering" */
-        event.preventDefault();
-        setArray([])
-        setArray(newArray)
+        doNotRefresh(event, newArray)
     }
 
     const editObject = (event, name, email, phone, id) => {
@@ -65,20 +64,12 @@ const Table = ({participants}) =>  {
         object.email = email;
         object.phone = phone;
         const newArray = [...array]
-
-        /*Messy but works "needs more engineering" */
-        event.preventDefault();
-        setArray([])
-        setArray(newArray)
+        doNotRefresh(event, newArray)
     }
 
     const cancelEdit = (event) => {
         const newArray = [...array]
-
-        /*Messy but works "needs more engineering" */
-        event.preventDefault();
-        setArray([])
-        setArray(newArray)
+        doNotRefresh(event, newArray)
     }
 
     const TableData = ({array}) => (

@@ -21,6 +21,7 @@ export const TableRow = ({ name, email, phone, onClick, id, onCancel, onDelete})
         }
     }
 
+    /* Move to common file and import instead */
     const onChange = (event, key) => {
         switch (key) {
             case 'name':

@@ -7,6 +7,7 @@ import styles from './Form.module.css'
 export const Form = ({onClick}) => {
     const [value, setValue] = useState({});
 
+    /* Move to common file and import instead */
     const onChange = (event, key) => {
         switch (key) {
             case 'name':

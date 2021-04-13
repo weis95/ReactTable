@@ -1,0 +1,22 @@
+.container {
+    padding: 16px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.container span {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container span input:first-child,
+.container span input:nth-last-child(1) {
+    width: 25%;
+}
+
+.container span input:nth-last-child(2) {
+    width: 40%;
+}

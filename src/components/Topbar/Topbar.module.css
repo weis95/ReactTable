@@ -1,0 +1,19 @@
+.container {
+    background: #a3acb4;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container span {
+    height: 32px;
+    width: 32px;
+    background: white;
+}
+.container h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0 0 0 8px;
+    color: white;
+}

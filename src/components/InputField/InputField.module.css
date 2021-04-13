@@ -1,0 +1,23 @@
+.container {
+    height: 36px;
+    padding: 0 0 0 5px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.editable {
+    background-color: #f9f9f9;
+    border: 2px solid #f2f2f2;
+}
+
+.tableRow {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #505050
+}
+
+.container:focus{
+    outline: none;
+}

@@ -1,0 +1,33 @@
+.container {
+    width: 912px;
+    margin: 0 auto;
+}
+
+.container table {
+    width: 912px;
+    text-align: left;
+    background: #FFFFFF;
+    border-collapse: collapse
+}
+
+.container thead th {
+    height: 48px;
+    padding: 0 24px 0 24px;
+    color: #757575;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.container tbody tr td:first-child,
+.container tbody tr td:nth-last-child(3),
+.container thead tr th:first-child,
+.container thead tr th:nth-last-child(3) {
+    width: 25%;
+}
+
+.container tbody tr td:nth-last-child(4),
+.container thead tr th:nth-last-child(4) {
+    width: 40%;
+}

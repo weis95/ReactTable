@@ -1,0 +1,26 @@
+.container {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 16px 0 16px;
+    height: 40px;
+    color: #6a6a6a;
+}
+
+.container:focus {
+    outline: none;
+}
+
+.add {
+    background: #eaeaea;
+}
+
+.cancel {
+    background: #eaeaea;
+    color: #07f;
+}
+
+.save {
+    background: #07f;
+    color: #FFFFFF;
+}
